@@ -1,0 +1,205 @@
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px;
+  position: relative;
+  transform: translateY(50%);
+  background-color: $light-background;
+  border-radius: 10px;
+  z-index: 5;
+
+  @media (max-width: $desktop-xl-width) {
+    padding: 24px;
+  }
+
+  @media (max-width: $desktop-l-width) {
+    margin: 0;
+    padding: 16px;
+  }
+
+  @media (max-width: $mobile-s-width) {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 40px 14px 14px;
+    transform: translateY(0);
+  }
+
+  &--wide {
+    transform: translateY(0);
+    border-radius: 0;
+    margin: 0;
+    padding: 36px 15%;
+
+    @media (max-width: $desktop-xl-width) {
+      padding: 36px 5%;
+    }
+
+    @media (max-width: $mobile-s-width) {
+      padding: 42px 14px 14px;
+      margin: 70px 0;
+    }
+
+    .discount__info {
+      padding: 0;
+      padding-right: 40px;
+
+      @media (max-width: 1220px) {
+        max-width: 570px;
+      }
+
+      @media (max-width: 992px) {
+        max-width: 510px;
+      }
+
+      @media (max-width: $mobile-s-width) {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.discount__info {
+  padding: 0 40px 0 26px;
+
+  @media (max-width: 1220px) {
+    max-width: 570px;
+  }
+
+  @media (max-width: 992px) {
+    max-width: 510px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 40px 0 0;
+  }
+
+  @media (max-width: $mobile-s-width) {
+    padding: 0;
+  }
+}
+
+.discount__title {
+  margin-bottom: 22px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 42px;
+  color: $dark-text;
+
+  @media (max-width: $desktop-l-width) {
+    margin-bottom: 10px;
+    font-size: 34px;
+    line-height: 38px;
+  }
+
+  @media (max-width: $desktop-s-width) {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  @media (max-width: $mobile-s-width) {
+    margin-bottom: 16px;
+    font-size: 36px;
+    line-height: 37px;
+  }
+}
+
+.discount__text {
+  font-size: 16px;
+  line-height: 17px;
+  color: rgba(23, 34, 59, 0.7);
+
+  @media (max-width: $desktop-l-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (max-width: $desktop-s-width) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  @media (max-width: $mobile-s-width) {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.discount__form {
+  max-width: 450px;
+
+  @media (max-width: $desktop-s-width) {
+    max-width: 212px;
+  }
+
+  @media (max-width: $mobile-s-width) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.discount__form-input {
+  margin-bottom: 22px;
+  text-align: center;
+  border: 1px solid rgba(23, 34, 59, 0.2);
+
+  @media (max-width: $desktop-l-width) {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 12px;
+  }
+
+  @media (max-width: $desktop-s-width) {
+    padding: 8px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (max-width: 992px) {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  @media (max-width: $mobile-s-width) {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 14px;
+  }
+}
+
+.discount__form-btn {
+
+  @media (max-width: $desktop-l-width) {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 12px;
+  }
+
+  @media (max-width: $desktop-s-width) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 8px;
+  }
+
+  @media (max-width: $mobile-s-width) {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 14px;
+    max-width: 100%;
+  }
+}

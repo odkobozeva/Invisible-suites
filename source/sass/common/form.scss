@@ -1,0 +1,42 @@
+.form__group {
+  display: flex;
+  max-width: 640px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.form__input {
+  padding: 16px 30px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: $light-gray-text;
+  background-color: $light-background;
+  border-radius: 5px;
+
+  &::placeholder {
+    color: rgba($light-gray-text, 0.3);
+  }
+}
+
+.form__btn {
+  width: 100%;
+  max-width: 450px;
+  padding: 18px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $light-text;
+  background-color: $highlight-color;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,132 @@
+doctype html
+html.page(lang="en")
+  head
+      meta(charset="utf-8")
+      title Invisible Suites
+      meta(content="width=device-width, initial-scale=1" name="viewport")
+      link(rel="stylesheet" href="css/style.min.css")
+      link(rel="shortcut icon", href="img/favicon/favicon.ico", type="image/x-icon")
+      link(rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png")
+      link(rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png")
+      link(rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png")
+      link(rel="manifest" href="img/favicon/site.webmanifest")
+      meta(name="msapplication-TileColor" content="#da532c")
+      meta(name="theme-color" content="#ffffff")
+
+  body.page__body
+    include common/icon.pug
+
+    main.page-main
+      section.hero
+        .hero__picture
+          picture
+              source(media="(max-width: 767px)" data-srcset="img/index-banner-s.jpg" srcset="img/index-banner-s.jpg")
+              img(class="hero__img" data-src="img/index-banner.jpg" alt="" src="img/index-banner.jpg")
+
+        .hero__info
+          img.hero__logo(src="img/logo.svg", alt="")
+          h1.hero__title <span class="highlight-text">The</span> Ultimate<br>Desert Escape
+          .hero__descr Experience a retreat like never&nbsp;before.
+          .hero__label
+            svg.hero__label-icon(width="23" height="33")
+              use(xlink:href="#location-icon")
+            p Located 15 minutes from Bryce National Park.
+
+        .box
+            .discount
+              .discount__info
+                .discount__title Get an exclusive discount
+                .discount__text Invisible Suites will be pre-launching soon. Get early access and VIP pricing by signing up now!
+              .discount__form.form
+                .form-group.discount__form-group
+                  input.form__input.discount__form-input(type="email" placeholder="Email Address" required)
+                  button.discount__form-btn.form__btn(type="button") Reserve My Booking Invite
+
+      section.experience
+        .experience__bg
+          picture
+            source(media="(max-width: 767px)" data-srcset="img/experience-bg-s.jpg" srcset="img/experience-bg-s.jpg")
+            img(class="experience__bg-img" data-src="img/experience-bg.jpg" alt="" src="img/experience-bg.jpg")
+
+        .box
+          .experience__title A Resort You'll <span class="highlight-text">Remember</span> for a Lifetime
+          .experience__content
+            .experience__wrap.experience__wrap--small
+              .experience__item
+                .experience__picture
+                  img(class="experience__img" alt="" src="img/experience-1.jpg")
+                .experience__text Unobstructed desert stargazing, luxury amenities, and the most exciting way to experience one of America’s most renowned National Parks.
+              .experience__item
+                .experience__picture
+                  img(class="experience__img" alt="" src="img/experience-2.jpg")
+                .experience__text Located just 2 hours from St. George, 4 hours from Las Vegas and Salt Lake City, Invisible Suites is the ultimate way to escape the daily grind and rejuvenate with desert serenity.
+            .experience__wrap.experience__wrap--wide
+              .experience__descr Perfect for a weekend getaway or a full<br>&nbsp;week of relaxation and exploration.
+              .experience__item.experience__item--wide
+                .experience__picture
+                  img(class="experience__img" alt="" src="img/experience-3.jpg")
+
+      section.includes
+        .includes__content
+          .box
+            .includes__info
+              .includes__title <span class="highlight-text">Your</span> Own Private Paradise
+              .includes__text Each Invisible Suite includes:
+            .includes__gallery
+              .includes__item
+                .includes__item-picture
+                  img(class="includes__item-img" alt="" src="img/includes-hot-tab.jpg")
+                .includes__item-title Private Hot Tub
+              .includes__item
+                .includes__item-picture
+                  img(class="includes__item-img" alt="" src="img/includes-lounge-area.jpg")
+                .includes__item-title Private Lounge Area
+              .includes__item
+                .includes__item-picture
+                  img(class="includes__item-img" alt="" src="img/includes-full-kitchenette.jpg")
+                .includes__item-title Full Kitchenette
+              .includes__item
+                .includes__item-picture
+                  img(class="includes__item-img" alt="" src="img/includes-private-bathroom.jpg")
+                .includes__item-title Private Bathroom
+              .includes__item
+                .includes__item-picture
+                  img(class="includes__item-img" alt="" src="img/includes-luxury-bed.jpg")
+                .includes__item-title Queen SIze Luxury Bed
+              .includes__item
+                .includes__item-picture
+                  img(class="includes__item-img" alt="" src="img/includes-patio-umbrellas.jpg")
+                .includes__item-title Patio Umbrellas
+              .includes__item
+                .includes__item-picture
+                  img(class="includes__item-img" alt="" src="img/includes-gym.jpg")
+                .includes__item-title Access to World Class Gym, Pool, Bar, and Restaurant
+              .includes__item
+                .includes__item-picture
+                  img(class="includes__item-img" alt="" src="img/includes-pool.jpg")
+                .includes__item-title Access to Oasis Pool and Bar
+
+      section.opening
+        .opening__content
+          .box
+            .opening__info
+              .opening__title Opening Spring <span class="highlight-text">2022</span>
+              .opening__text
+                p Spots are limited and will sell out fast. Enter below and we’ll keep you updated on our grand opening.
+                p We’ll even give you the ability to reserve a VIP package with exclusive pricing and early access to our launch!
+            .opening__picture
+              picture
+                source(media="(max-width: 767px)" data-srcset="img/opening-banner-s.jpg" srcset="img/opening-banner-s.jpg")
+                img(class="opening__img" alt="" src="img/opening-banner.jpg")
+
+
+      section.discount.discount--wide
+        .discount__info
+          .discount__title Get an exclusive discount
+          .discount__text Invisible Suites will be pre-launching soon. Get early access and VIP pricing by signing up now!
+        .discount__form.form
+          .form-group.discount__form-group
+            input.form__input.discount__form-input(type="email" placeholder="Email Address" required)
+            button.discount__form-btn.form__btn(type="button") Reserve My Booking Invite
+
+    include common/footer.pug

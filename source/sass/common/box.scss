@@ -1,0 +1,13 @@
+.box {
+  max-width: 1600px;
+  width: calc(100% - 332px);
+  margin: 0 auto;
+
+  @media (max-width: 1600px) {
+    width: calc(100% - 80px);
+  }
+
+  @media (max-width: 767px) {
+    width: calc(100% - 40px);
+  }
+}

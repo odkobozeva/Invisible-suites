@@ -1,0 +1,124 @@
+.congrats {
+  display: flex;
+
+  @media (max-width: $tablet-width) {
+    height: auto;
+    max-height: unset;
+  }
+
+  &:before {
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    content: '';
+    top: 0;
+    left: unset;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+
+    @media (max-width: $desktop-s-width) {
+      width: 70%;
+    }
+
+    @media (max-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 0%;
+    }
+  }
+}
+
+.congrats__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 4% 10% 4% 5%;
+  margin-left: auto;
+
+  @media (max-width: $desktop-s-width) {
+    width: 70%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 15% 5%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 8% 5% 18%;
+  }
+}
+
+.congrats__subtitle {
+  position: relative;
+  margin-bottom: 76px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  color: rgba($light-text, 0.9);
+
+  @media (max-width: $desktop-l-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 122px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 5px;
+    left: 0;
+    bottom: -8px;
+    background-color: rgba($highlight-color, 0.9);
+  }
+}
+
+.congrats__title {
+  margin-bottom: 30px;
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  color: $light-text;
+
+  @media (max-width: $desktop-xl-width) {
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  @media (max-width: $desktop-l-width) {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+
+.congrats__descr {
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.02em;
+  color: $light-text;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 300px;
+  }
+
+  @media (max-width: $mobile-s-width) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

@@ -1,0 +1,33 @@
+doctype html
+html.page(lang="en")
+  head
+      meta(charset="utf-8")
+      title Invisible Suites
+      meta(content="width=device-width, initial-scale=1" name="viewport")
+      link(rel="stylesheet" href="css/style.min.css")
+      link(rel="shortcut icon", href="img/favicon/favicon.ico", type="image/x-icon")
+      link(rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png")
+      link(rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png")
+      link(rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png")
+      link(rel="manifest" href="img/favicon/site.webmanifest")
+      meta(name="msapplication-TileColor" content="#da532c")
+      meta(name="theme-color" content="#ffffff")
+
+  body.page__body
+    include common/icon.pug
+
+    main.page-main
+      section.hero.congrats
+        .hero__picture
+          picture
+              source(media="(max-width: 767px)" data-srcset="img/congrats-banner-s.jpg" srcset="img/congrats-banner-s.jpg")
+              img(class="hero__img" data-src="img/congrats-banner.jpg" alt="" src="img/congrats-banner.jpg")
+
+        .congrats__info
+          .congrats__subtitle Invisible Suites
+          h2.congrats__title Congrats! You’re a <span class="highlight-text">VIP</span>.
+          .congrats__descr
+            p By reserving you can purchase Invisible Suites at the lowest possible price. Be sure to check your email for your receipt and more information as we get closer to our launch.
+          button.congrats__btn.btn(type="button") Join our VIP Facebook group!
+
+    include common/footer.pug

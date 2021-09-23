@@ -1,0 +1,93 @@
+doctype html
+html.page(lang="en")
+  head
+      meta(charset="utf-8")
+      title Invisible Suites
+      meta(content="width=device-width, initial-scale=1" name="viewport")
+      link(rel="stylesheet" href="css/style.min.css")
+      link(rel="shortcut icon", href="img/favicon/favicon.ico", type="image/x-icon")
+      link(rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png")
+      link(rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png")
+      link(rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png")
+      link(rel="manifest" href="img/favicon/site.webmanifest")
+      meta(name="msapplication-TileColor" content="#da532c")
+      meta(name="theme-color" content="#ffffff")
+
+  body.page__body
+    include common/icon.pug
+
+    main.page-main
+      section.hero.billing-hero
+        .hero__picture
+          picture
+              source(media="(max-width: 767px)" data-srcset="img/billing-banner-s.jpg" srcset="img/billing-banner-s.jpg")
+              img(class="hero__img" data-src="img/billing-banner.jpg" alt="" src="img/billing-banner.jpg")
+
+        .billing-hero__info
+          .billing-hero__subtitle Invisible Suites
+          h2.billing-hero__title Save <span class="highlight-text">$200</span> per night when you reserve your stay at Invisible Suites today!
+          .billing-hero__descr
+            p To receive this offer, simply place a $1 deposit and you will be locked in for our exclusive discount. Putting down $1 now locks in a $200 per night discount off our nightly rate of $749.
+            p That means you’ll pay a grand total of $549 per night.
+          button.billing-hero__btn.btn(type="button") Reserve My Invisible Suite
+
+      section.guarantee
+        .box
+          ul.guarantee__list
+            li.guarantee__item
+              .guarantee__inner
+                svg.guarantee__icon(width="79" height="90")
+                  use(xlink:href="#guarantee-1-icon")
+                p.guarantee__title 100% Refund<br>Guarantee
+              p.guarantee__text If you cancel your reservation, we guarantee you a full refund at any time before the project moves into production.
+            li.guarantee__item
+              .guarantee__inner
+                svg.guarantee__icon(width="97" height="90")
+                  use(xlink:href="#guarantee-2-icon")
+                p.guarantee__title Transparency<br>Guarantee
+              p.guarantee__text We will be transparent about the progress of our project throughout the entire campaign.
+            li.guarantee__item
+              .guarantee__inner
+                svg.guarantee__icon(width="85" height="90")
+                  use(xlink:href="#guarantee-3-icon")
+                p.guarantee__title Secure<br>Payment
+              p.guarantee__text All orders are processed through our secure network. Your credit card information is never stored in any way. We respect your privacy.
+
+      section.billing.box
+        h1.billing__title Reservation review
+        .billing__info
+          .billing__content
+            .billing__info-row
+              p PRODUCT
+              p TOTAL
+            .billing__info-row.billing__info-reserve
+              p VIP Invisible Suite
+              p $1
+        form.form.billing__form(action="")
+          .billing__title Billing details
+          .form-group.billing__form-group
+            input.form__input.billing__form-input(type="email" placeholder="Email Address" required)
+            input.form__input.billing__form-input(type="text" placeholder="Street Address" required)
+            input.form__input.billing__form-input(type="text" placeholder="Address line 2" required)
+            .billing__form-row
+              input.form__input.billing__form-input(type="text" placeholder="City" required)
+              input.form__input.billing__form-input(type="text" placeholder="State/Province/Region" required)
+            .billing__form-row
+              input.form__input.billing__form-input(type="text" placeholder="Zip/Postal code" required)
+              .select.form__input
+                select(name="format")
+                  option(selected disable hidden) Country
+                  option(value="italy") italy
+                  option(value="korea") korea
+                  option(value="nepal") nepal
+                  option(value="portugal") portugal
+                  option(value="USA") USA
+            input.form__input.billing__form-input(type="email" placeholder="Card details" required)
+            input.form__input.billing__form-input(type="email" placeholder="Cardholder Name" required)
+          .billing__info-row.billing__reserve-total
+            p Illuminate box Reservation
+            p Price: <span class="highlight-text"> $1.00 </span>
+          button.billing__btn.form__btn(type="button") Complite Reservation For $1
+
+
+    include common/footer.pug
