@@ -8,7 +8,7 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const pug = require("gulp-pug");
 const htmlValidator = require('gulp-w3c-html-validator')
-const bemValidator = require('gulp-html-bem-validator')
+// const bemValidator = require('gulp-html-bem-validator')
 // const htmlmin = require("gulp-htmlmin");
 // const uglify = require("gulp-uglify");
 const terser = require("gulp-terser");
@@ -56,7 +56,7 @@ const pug2html = () => {
     // .pipe(plumber())
     .pipe(pug({pretty: true}))
     .pipe(htmlValidator())
-    .pipe(bemValidator())
+    // .pipe(bemValidator())
     .pipe(gulp.dest("build"));
 }
 
