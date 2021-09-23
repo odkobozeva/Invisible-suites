@@ -1,11 +1,11 @@
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -27,16 +27,23 @@ ul {
   list-style: none;
 }
 
-h1, h2, h3, p, ul, ol {
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
   margin: 0;
   padding: 0;
 }
 
-button, input {
+button,
+input {
   outline: none;
   border: none;
+
   &:focus {
-      outline: none;
+    outline: none;
   }
 }
 

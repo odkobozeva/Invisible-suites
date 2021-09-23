@@ -3,18 +3,18 @@
   justify-content: space-between;
   flex-direction: column;
   position: relative;
-  min-height: calc(100vw*0.47);
+  min-height: calc(100vw * 0.47);
 
   @media (max-width: $mobile-width) {
     height: auto;
     max-height: unset;
   }
 
-  &:before {
+  &::before {
     @media (min-width: 768px) {
-      background: rgba(0,0,0,.6);
+      background: rgba(0, 0, 0, 0.6);
       position: absolute;
-      content: '';
+      content: "";
       top: 0;
       left: 0;
       bottom: 0;

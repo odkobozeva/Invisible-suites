@@ -121,10 +121,12 @@
   padding: 0 25px;
 
   select {
-    &::-ms-expand {display: none;}
+    &::-ms-expand {
+      display: none;
+    }
+
     background: none;
     border: 0;
-    -webkit-appearance: none;
     appearance: none;
     font-family: inherit;
     width: 100%;
@@ -148,10 +150,6 @@
     right: 20px;
     top: 50%;
     pointer-events: none;
-  }
-
-  &:hidden {
-    color: $light-text;
   }
 }
 
