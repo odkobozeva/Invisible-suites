@@ -4,29 +4,28 @@
   "description": "",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "10.0.2",
-    "browser-sync": "2.26.13",
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.27.7",
     "del": "^6.0.0",
-    "gulp": "4.0.2",
-    "gulp-html-bem-validator": "^1.0.5",
+    "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
-    "gulp-plumber": "1.2.1",
-    "gulp-postcss": "9.0.0",
-    "gulp-pug": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-pug": "^5.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "4.1.0",
+    "gulp-sass": "5.0.0",
     "gulp-sourcemaps": "3.0.0",
-    "gulp-svgstore": "^7.0.1",
+    "gulp-svgstore": "^8.0.0",
     "gulp-terser": "^2.0.1",
     "gulp-uglify": "^3.0.2",
-    "gulp-w3c-html-validator": "2.0.1",
-    "gulp-webp": "^4.0.1",
-    "postcss": "8.1.7",
-    "postcss-csso": "^5.0.0",
+    "gulp-w3c-html-validator": "^5.1.0",
+    "gulp-webp": "^4.0.0",
+    "postcss": "8.4.5",
+    "postcss-csso": "^5.0.1",
     "pug-to-html": "^1.0.2",
     "stylelint": "13.7.2",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "stylelint-config-htmlacademy": "^0.1.12"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -49,10 +48,12 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "14.15.0"
+    "node": "16.13.0"
   },
   "dependencies": {
     "gulp-concat": "^2.6.1",
+    "node-sass": "^7.0.1",
+    "sass": "^1.45.2",
     "swiper": "^6.5.0"
   }
 }

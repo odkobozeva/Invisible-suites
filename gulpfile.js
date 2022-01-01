@@ -1,13 +1,13 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass");
+const sass = require('gulp-sass')(require('sass'));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const pug = require("gulp-pug");
-const htmlValidator = require('gulp-w3c-html-validator')
+// const htmlValidator = require('gulp-w3c-html-validator')
 // const bemValidator = require('gulp-html-bem-validator')
 // const htmlmin = require("gulp-htmlmin");
 // const uglify = require("gulp-uglify");
@@ -55,7 +55,7 @@ const pug2html = () => {
   return gulp.src("source/pages/*.pug")
     // .pipe(plumber())
     .pipe(pug({pretty: true}))
-    .pipe(htmlValidator())
+    // .pipe(htmlValidator())
     // .pipe(bemValidator())
     .pipe(gulp.dest("build"));
 }
