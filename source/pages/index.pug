@@ -5,6 +5,7 @@ html.page(lang="en")
       title Invisible Suites
       meta(content="width=device-width, initial-scale=1" name="viewport")
       link(rel="stylesheet" href="css/style.min.css")
+      link(rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css")
       link(rel="shortcut icon", href="img/favicon/favicon.ico", type="image/x-icon")
       link(rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png")
       link(rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png")
@@ -25,15 +26,15 @@ html.page(lang="en")
 
         .hero__info
           img.hero__logo(src="img/logo.svg", alt="")
-          h1.hero__title <span class="highlight-text">The</span> Ultimate<br>Desert Escape
-          .hero__descr Experience a retreat like never&nbsp;before.
-          .hero__label
+          h1.hero__title(data-aos="fade-right") <span class="highlight-text">The</span> Ultimate<br>Desert Escape
+          .hero__descr(data-aos="fade-right" data-aos-delay="300") Experience a retreat like never&nbsp;before.
+          .hero__label(data-aos="fade-right" data-aos-delay="600")
             svg.hero__label-icon(width="23" height="33")
               use(xlink:href="#location-icon")
             p Located 15 minutes from Bryce National Park.
 
         .box
-            .discount
+            .discount(data-aos="fade-up")
               .discount__info
                 .discount__title Get an exclusive discount
                 .discount__text Invisible Suites will be pre-launching soon. Get early access and VIP pricing by signing up now!
@@ -49,20 +50,20 @@ html.page(lang="en")
             img(class="experience__bg-img" data-src="img/experience-bg.jpg" alt="" src="img/experience-bg.jpg")
 
         .box
-          .experience__title A Resort You'll <span class="highlight-text">Remember</span> for a Lifetime
+          .experience__title(data-aos="fade-up") A Resort You'll <span class="highlight-text">Remember</span> for a Lifetime
           .experience__content
             .experience__wrap.experience__wrap--small
-              .experience__item
+              .experience__item(data-aos="fade-right")
                 .experience__picture
                   img(class="experience__img" alt="" src="img/experience-1.jpg")
                 .experience__text Unobstructed desert stargazing, luxury amenities, and the most exciting way to experience one of America’s most renowned National Parks.
-              .experience__item
+              .experience__item(data-aos="fade-right")
                 .experience__picture
                   img(class="experience__img" alt="" src="img/experience-2.jpg")
                 .experience__text Located just 2 hours from St. George, 4 hours from Las Vegas and Salt Lake City, Invisible Suites is the ultimate way to escape the daily grind and rejuvenate with desert serenity.
             .experience__wrap.experience__wrap--wide
-              .experience__descr Perfect for a weekend getaway or a full<br>&nbsp;week of relaxation and exploration.
-              .experience__item.experience__item--wide
+              .experience__descr(data-aos="flip-up" data-aos-delay="350") Perfect for a weekend getaway or a full<br>&nbsp;week of relaxation and exploration.
+              .experience__item.experience__item--wide(data-aos="fade-left")
                 .experience__picture
                   img(class="experience__img" alt="" src="img/experience-3.jpg")
 
@@ -70,38 +71,38 @@ html.page(lang="en")
         .includes__content
           .box
             .includes__info
-              .includes__title <span class="highlight-text">Your</span> Own Private Paradise
-              .includes__text Each Invisible Suite includes:
+              .includes__title(data-aos="fade-up") <span class="highlight-text">Your</span> Own Private Paradise
+              .includes__text(data-aos="fade-up") Each Invisible Suite includes:
             .includes__gallery
-              .includes__item
+              .includes__item(data-aos="zoom-in")
                 .includes__item-picture
                   img(class="includes__item-img" alt="" src="img/includes-hot-tab.jpg")
                 .includes__item-title Private Hot Tub
-              .includes__item
+              .includes__item(data-aos="zoom-in")
                 .includes__item-picture
                   img(class="includes__item-img" alt="" src="img/includes-lounge-area.jpg")
                 .includes__item-title Private Lounge Area
-              .includes__item
+              .includes__item(data-aos="zoom-in")
                 .includes__item-picture
                   img(class="includes__item-img" alt="" src="img/includes-full-kitchenette.jpg")
                 .includes__item-title Full Kitchenette
-              .includes__item
+              .includes__item(data-aos="zoom-in")
                 .includes__item-picture
                   img(class="includes__item-img" alt="" src="img/includes-private-bathroom.jpg")
                 .includes__item-title Private Bathroom
-              .includes__item
+              .includes__item(data-aos="zoom-in")
                 .includes__item-picture
                   img(class="includes__item-img" alt="" src="img/includes-luxury-bed.jpg")
                 .includes__item-title Queen SIze Luxury Bed
-              .includes__item
+              .includes__item(data-aos="zoom-in")
                 .includes__item-picture
                   img(class="includes__item-img" alt="" src="img/includes-patio-umbrellas.jpg")
                 .includes__item-title Patio Umbrellas
-              .includes__item
+              .includes__item(data-aos="zoom-in")
                 .includes__item-picture
                   img(class="includes__item-img" alt="" src="img/includes-gym.jpg")
                 .includes__item-title Access to World Class Gym, Pool, Bar, and Restaurant
-              .includes__item
+              .includes__item(data-aos="zoom-in")
                 .includes__item-picture
                   img(class="includes__item-img" alt="" src="img/includes-pool.jpg")
                 .includes__item-title Access to Oasis Pool and Bar
@@ -110,17 +111,17 @@ html.page(lang="en")
         .opening__content
           .box
             .opening__info
-              .opening__title Opening Spring <span class="highlight-text">2022</span>
+              .opening__title(data-aos="fade-down") Opening Spring <span class="highlight-text">2022</span>
               .opening__text
-                p Spots are limited and will sell out fast. Enter below and we’ll keep you updated on our grand opening.
-                p We’ll even give you the ability to reserve a VIP package with exclusive pricing and early access to our launch!
-            .opening__picture
+                p(data-aos="fade-left" data-aos-delay="300") Spots are limited and will sell out fast. Enter below and we’ll keep you updated on our grand opening.
+                p(data-aos="fade-left" data-aos-delay="600") We’ll even give you the ability to reserve a VIP package with exclusive pricing and early access to our launch!
+            .opening__picture(data-aos="zoom-out" data-aos-duration="1600")
               picture
                 source(media="(max-width: 767px)" data-srcset="img/opening-banner-s.jpg" srcset="img/opening-banner-s.jpg")
                 img(class="opening__img" alt="" src="img/opening-banner.jpg")
 
 
-      section.discount.discount--wide
+      section.discount.discount--wide(data-aos="fade-down")
         .discount__info
           .discount__title Get an exclusive discount
           .discount__text Invisible Suites will be pre-launching soon. Get early access and VIP pricing by signing up now!
@@ -130,3 +131,9 @@ html.page(lang="en")
             button.discount__form-btn.form__btn(type="button") Reserve My Booking Invite
 
     include common/footer.pug
+
+  script(src="https://unpkg.com/aos@next/dist/aos.js")
+  script.
+    AOS.init({
+      duration: 800,
+    });
